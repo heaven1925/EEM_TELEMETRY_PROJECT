@@ -1,0 +1,6 @@
+../features/ModuleRTC/Src/ModuleRTC.c:30:6:ModuleRTC_HWInit	4	static
+../features/ModuleRTC/Src/ModuleRTC.c:42:6:ModuleRTC_SWInit	4	static
+../features/ModuleRTC/Src/ModuleRTC.c:54:6:ModuleRTC_StartUP	8	static
+../features/ModuleRTC/Src/ModuleRTC.c:80:6:ModuleRTC_MAIN_Routine	4	static
+../features/ModuleRTC/Src/ModuleRTC.c:92:6:ModuleRTC_MAIN_Process	4	static
+../features/ModuleRTC/Src/ModuleRTC.c:105:6:ModuleRTC_MAIN	8	static

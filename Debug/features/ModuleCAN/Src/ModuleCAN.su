@@ -1,0 +1,6 @@
+../features/ModuleCAN/Src/ModuleCAN.c:30:6:ModuleCAN_HWInit	4	static
+../features/ModuleCAN/Src/ModuleCAN.c:42:6:ModuleCAN_SWInit	4	static
+../features/ModuleCAN/Src/ModuleCAN.c:54:6:ModuleCAN_StartUP	8	static
+../features/ModuleCAN/Src/ModuleCAN.c:80:6:ModuleCAN_MAIN_Routine	4	static
+../features/ModuleCAN/Src/ModuleCAN.c:92:6:ModuleCAN_MAIN_Process	4	static
+../features/ModuleCAN/Src/ModuleCAN.c:105:6:ModuleCAN_MAIN	8	static

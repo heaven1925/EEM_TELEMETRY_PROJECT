@@ -1,0 +1,17 @@
+../application/Src/app.c:54:6:APP_timeoutTimerIRQHandler	16	static
+../application/Src/app.c:59:6:APP_periodicTimerIRQHandler	16	static
+../application/Src/app.c:67:6:Initilialise_App	24	static
+../application/Src/app.c:228:6:MAIN_App	8	static
+../application/Src/app.c:252:6:Process_TelemetryMAIN_TaskHandler	16	static
+../application/Src/app.c:286:6:Process_Flash_TaskHandler	24	static
+../application/Src/app.c:331:6:Process_CAN_TaskHandler	24	static
+../application/Src/app.c:374:6:Process_RTC_TaskHandler	24	static
+../application/Src/app.c:418:6:Process_SDCARD_TaskHandler	24	static
+../application/Src/app.c:460:6:Process_WIFI_TaskHandler	24	static
+../application/Src/app.c:504:6:Process_NEXTION_TaskHandler	24	static
+../application/Src/app.c:551:10:Process_Flash_Run	16	static
+../application/Src/app.c:588:10:Process_Can_Run	16	static
+../application/Src/app.c:625:10:Process_RTC_Run	16	static
+../application/Src/app.c:662:10:Process_SDCARD_Run	16	static
+../application/Src/app.c:699:10:Process_WIFI_Run	16	static
+../application/Src/app.c:736:10:Process_NEXTION_Run	16	static

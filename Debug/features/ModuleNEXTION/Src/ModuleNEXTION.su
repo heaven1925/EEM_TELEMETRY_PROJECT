@@ -1,0 +1,6 @@
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:29:6:ModuleNEXTION_HWInit	4	static
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:41:6:ModuleNEXTION_SWInit	4	static
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:53:6:ModuleNEXTION_StartUP	8	static
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:79:6:ModuleNEXTION_MAIN_Routine	4	static
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:91:6:ModuleNEXTION_MAIN_Process	4	static
+../features/ModuleNEXTION/Src/ModuleNEXTION.c:104:6:ModuleNEXTION_MAIN	8	static

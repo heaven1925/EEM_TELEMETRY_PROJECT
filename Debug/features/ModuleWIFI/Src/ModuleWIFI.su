@@ -1,0 +1,6 @@
+../features/ModuleWIFI/Src/ModuleWIFI.c:30:6:ModuleWIFI_HWInit	4	static
+../features/ModuleWIFI/Src/ModuleWIFI.c:42:6:ModuleWIFI_SWInit	4	static
+../features/ModuleWIFI/Src/ModuleWIFI.c:54:6:ModuleWIFI_StartUP	8	static
+../features/ModuleWIFI/Src/ModuleWIFI.c:80:6:ModuleWIFI_MAIN_Routine	4	static
+../features/ModuleWIFI/Src/ModuleWIFI.c:92:6:ModuleWIFI_MAIN_Process	4	static
+../features/ModuleWIFI/Src/ModuleWIFI.c:105:6:ModuleWIFI_MAIN	8	static

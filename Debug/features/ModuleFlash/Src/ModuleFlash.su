@@ -1,0 +1,6 @@
+../features/ModuleFlash/Src/ModuleFlash.c:30:6:ModuleFlash_HWInit	4	static
+../features/ModuleFlash/Src/ModuleFlash.c:42:6:ModuleFlash_SWInit	4	static
+../features/ModuleFlash/Src/ModuleFlash.c:54:6:ModuleFlash_StartUP	8	static
+../features/ModuleFlash/Src/ModuleFlash.c:80:6:ModuleFlash_MAIN_Routine	4	static
+../features/ModuleFlash/Src/ModuleFlash.c:92:6:ModuleFlash_MAIN_Process	4	static
+../features/ModuleFlash/Src/ModuleFlash.c:105:6:ModuleFlash_MAIN	8	static
