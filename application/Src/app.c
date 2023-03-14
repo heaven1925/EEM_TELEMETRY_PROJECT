@@ -265,6 +265,17 @@ void Process_TelemetryMAIN_TaskHandler(void* param)
 
         TelemetyMain_MAIN(); /* Main Application */
 
+        Process_Can_Run();
+
+        Process_Flash_Run();
+
+        Process_NEXTION_Run();
+
+        Process_SDCARD_Run();
+
+        Process_WIFI_Run();
+
+
 		vTaskDelay(10);  /* Main Thread Checkout every 10ms tick */
 
         // ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
@@ -288,13 +299,15 @@ void Process_Flash_TaskHandler(void* param)
 
 	ModuleFlash_StartUP();
 
+	while(1)
+	{
+
 	/* Semaphore Wait */
 	xSemResult.Process_Flash = xQueueSemaphoreTake(xSemHandle.Process_Flash, osWaitForever);
 	if (pdTRUE == xSemResult.Process_Flash)
 	{
 
-		while(1)
-		{
+
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -311,13 +324,14 @@ void Process_Flash_TaskHandler(void* param)
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 		}
 
-	}
+
 	else
 	{
 		/* Semaphore fail / Create Again                                                             */
 		xSemHandle.Process_Flash = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_Flash);
 	}
 
+	}
 
 }
 
@@ -332,13 +346,12 @@ void Process_CAN_TaskHandler(void* param)
 {
 	ModuleCAN_StartUP();
 
+while(1)
+    {
 	/* Semaphore Wait */
 	xSemResult.Process_CAN = xQueueSemaphoreTake(xSemHandle.Process_CAN, osWaitForever);
 	if (pdTRUE == xSemResult.Process_CAN)
 	{
-
-		while(1)
-		{
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -353,7 +366,6 @@ void Process_CAN_TaskHandler(void* param)
         DEBUG_printThread((char *)PROCESS_CAN_THREADNAME, "ENDED");
 #endif
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
-		}
 
 	}
 	else
@@ -361,6 +373,7 @@ void Process_CAN_TaskHandler(void* param)
 		/* Semaphore fail / Create Again                                                             */
 		xSemHandle.Process_CAN = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_CAN);
 	}
+    }
 }
 
 
@@ -375,13 +388,15 @@ void Process_RTC_TaskHandler(void* param)
 {
 	ModuleRTC_StartUP();
 
+	while(1)
+	{
+
 	/* Semaphore Wait */
 	xSemResult.Process_RTC = xQueueSemaphoreTake(xSemHandle.Process_RTC, osWaitForever);
 	if (pdTRUE == xSemResult.Process_RTC)
 	{
 
-		while(1)
-		{
+
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -396,13 +411,15 @@ void Process_RTC_TaskHandler(void* param)
         DEBUG_printThread((char *)PROCESS_RTC_THREADNAME, "ENDED");
 #endif
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
-		}
-
 	}
+
+
 	else
 	{
 		/* Semaphore fail / Create Again  */
 		xSemHandle.Process_RTC = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_RTC);
+	}
+
 	}
 
 }
@@ -419,12 +436,14 @@ void Process_SDCARD_TaskHandler(void* param)
 {
 	ModuleSDCard_StartUP();
 
+	while(1)
+	{
+
 	/* Semaphore Wait */
 	xSemResult.Process_SDCARD = xQueueSemaphoreTake(xSemHandle.Process_SDCARD, osWaitForever);
 	if (pdTRUE == xSemResult.Process_SDCARD)
 	{
-		while(1)
-		{
+
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -441,12 +460,15 @@ void Process_SDCARD_TaskHandler(void* param)
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 		}
 
-	}
+
 	else
 	{
 		/* Semaphore fail / Create Again  */
 		xSemHandle.Process_SDCARD = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_SDCARD);
 	}
+
+	}
+
 }
 
 
@@ -461,13 +483,15 @@ void Process_WIFI_TaskHandler(void* param)
 {
 	ModuleWIFI_StartUP();
 
+	while(1)
+	{
+
 	/* Semaphore Wait */
 	xSemResult.Process_WIFI = xQueueSemaphoreTake(xSemHandle.Process_WIFI, osWaitForever);
 	if (pdTRUE == xSemResult.Process_WIFI)
 	{
 
-		while(1)
-		{
+
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -484,11 +508,13 @@ void Process_WIFI_TaskHandler(void* param)
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 		}
 
-	}
+
 	else
 	{
 		/* Semaphore fail / Create Again  */
 		xSemHandle.Process_WIFI = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_WIFI);
+	}
+
 	}
 
 }
@@ -505,13 +531,15 @@ void Process_NEXTION_TaskHandler(void* param)
 {
 	ModuleNEXTION_StartUP();
 
+
+	while(1)
+	{
 	/* Semaphore Wait */
 	xSemResult.Process_NEXTION = xQueueSemaphoreTake(xSemHandle.Process_NEXTION, osWaitForever);
 	if (pdTRUE == xSemResult.Process_NEXTION)
 	{
 
-		while(1)
-		{
+
 
 		//HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 #ifdef DEBUG_THREAD
@@ -527,11 +555,13 @@ void Process_NEXTION_TaskHandler(void* param)
 #endif
         //HAL_IWDG_Refresh(&hiwdg);   /*	Watchdog-Clear	 */
 		}
-	}
+
 	else
 	{
 		/* Semaphore fail / Create Again  */
 		xSemHandle.Process_NEXTION = xSemaphoreCreateBinaryStatic(&xSemaphore.Process_NEXTION);
+	}
+
 	}
 
 

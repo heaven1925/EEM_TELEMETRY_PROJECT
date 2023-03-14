@@ -23,13 +23,11 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Core/ThreadSafe \
 Drivers/DS3231/Src \
-Drivers/SDCARD/Src \
+Drivers/EEPROM_Flash/Src \
+Drivers/NEXTION/Src \
 Drivers/STM32F4xx_HAL_Driver/Src \
-FATFS/App \
-FATFS/Target \
-Middlewares/Third_Party/FatFs/src \
-Middlewares/Third_Party/FatFs/src/option \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \

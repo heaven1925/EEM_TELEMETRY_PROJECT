@@ -1,7 +1,7 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
-#include "main.h"
+
 #include "types.h"
 
 /*----------------------------------------------------------------------------*/

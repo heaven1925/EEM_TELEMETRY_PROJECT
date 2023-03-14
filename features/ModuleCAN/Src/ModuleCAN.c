@@ -106,8 +106,7 @@ void ModuleCAN_MAIN(void)
 {
 	ModuleCAN_StartUP();
 
-	while(1)
-	{
+
 		switch(ModuleCAN_MAIN_State)
 		{
 		    case ModuleCAN_MAIN_State_IDLE:
@@ -135,7 +134,7 @@ void ModuleCAN_MAIN(void)
 		    break;
 
 		}
-	}
+
 }
 
 

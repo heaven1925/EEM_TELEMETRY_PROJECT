@@ -24,8 +24,19 @@
 #include "ModuleWIFI_public.h"
 
 
-/*********************** DEFINES ***********************************************/
 
+/*********************** DEFINES ***********************************************/
+//FATFS fs; //Dosya sistemi
+//FIL file; //Dosya
+//
+//FRESULT fresult;
+//char buffer[1024];
+//
+//UINT br,bw;
+//
+//FATFS*pfs;
+//DWORD fre_clust;
+//uint32_t total, free_space;
 
 	
 	

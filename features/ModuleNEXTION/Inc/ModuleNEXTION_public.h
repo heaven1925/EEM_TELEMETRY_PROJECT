@@ -8,8 +8,8 @@
   * @brief	 Ege Elektromobil CAN Stack
 ********************************************************************************/
 
-#ifndef __NEXTION_MODULE_DEFINITION_H__
-#define	__NEXTION_MODULE_DEFINITION_H__
+#ifndef __NEXTION_MODULE_PUBLIC_H__
+#define	__NEXTION_MODULE_PUBLIC_H__
 
 	
 	

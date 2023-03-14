@@ -11,6 +11,7 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleNEXTION_private.h"
+#include "nextion.h"
 
 /************************** DEFINES ********************************************/
 #define	MODULENEXTION_MAIN_THREAD
