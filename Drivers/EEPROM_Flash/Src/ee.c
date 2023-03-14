@@ -3,112 +3,19 @@
 #include "eeConfig.h"
 #include <string.h>
 
-#define   PAGE                  0
-#define   SECTOR                1
-#define   PAGE_NUM              2
 
-#if defined(STM32F103xB)
-#define   _EE_SIZE              1024
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 127)
-#error  "Please Enter correct address, maximum is (127)"
-#endif
-#endif
+#define   SECTOR                5
 
-#if defined(STM32F103x8)
-#define   _EE_MAX_SIZE          1024
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_MAX_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 63)
-#error  "Please Enter correct address, maximum is (63)"
-#endif
-#endif
 
-#if defined(STM32F103xC)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 127)
-#error  "Please Enter correct address, maximum is (127)"
-#endif
-#endif
 
-#if defined(STM32F103xD)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 191)
-#error  "Please Enter correct address, maximum is (191)"
-#endif
-#endif
 
-#if defined(STM32F103xE)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 255)
-#error  "Please Enter correct address, maximum is (255)"
-#endif
-#endif
-
-#if defined(STM32F030x4) || defined(STM32F042x4)  || defined(STM32F070x4)
-#define   _EE_SIZE              1024
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 15)
-#error  "Please Enter correct address, maximum is (15)"
-#endif
-#endif
-
-#if  defined(STM32F030x6) || defined(STM32F042x6) || defined(STM32F070x6)
-#define   _EE_SIZE              1024
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 31)
-#error  "Please Enter correct address, maximum is (31)"
-#endif
-#endif
-
-#if defined(STM32F030x8) || defined(STM32F042x8)
-#define   _EE_SIZE              1024
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 63)
-#error  "Please Enter correct address, maximum is (63)"
-#endif
-#endif
-
-#if defined(STM32F070xB)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 63)
-#error  "Please Enter correct address, maximum is (63)"
-#endif
-#endif
-
-#if defined(STM32F070xC)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 127)
-#error  "Please Enter correct address, maximum is (127)"
-#endif
-#endif
-
-#if defined(STM32F405xx) || defined(STM32F407xx) || defined(STM32F415xx) || defined(STM32F417xx)
+#if defined(STM32F401xC)||defined(STM32F401xD)||defined(STM32F446xD)
 #define   _EE_SIZE              (1024 * 128)
 #define   _EE_ADDR_INUSE        (((uint32_t)0x08020000) | (_EE_SIZE*(_EE_USE_FLASH_PAGE_OR_SECTOR - 5)))
 #define   _EE_FLASH_BANK        FLASH_BANK_1
 #define   _EE_VOLTAGE_RANGE     _EE_VOLTAGE
 #define   _EE_PAGE_OR_SECTOR    SECTOR
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 11)
+#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 7)
 #error  "Please Enter correct address, maximum is (11)"
 #endif
 #if (_EE_USE_FLASH_PAGE_OR_SECTOR < 5)
@@ -116,66 +23,6 @@
 #endif
 #endif
 
-#if defined(STM32F411xC)
-#define   _EE_SIZE              (1024 * 128)
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08020000) | (_EE_SIZE*(_EE_USE_FLASH_PAGE_OR_SECTOR - 5)))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_VOLTAGE_RANGE     _EE_VOLTAGE
-#define   _EE_PAGE_OR_SECTOR    SECTOR
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 5)
-#error  "Please Enter correct address, maximum is (5)"
-#endif
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR < 5)
-#error  "Please Enter correct address, minimum is (5)"
-#endif
-#endif
-
-#if defined(STM32F411xE)
-#define   _EE_SIZE              (1024 * 128)
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08020000) | (_EE_SIZE*(_EE_USE_FLASH_PAGE_OR_SECTOR - 5)))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_VOLTAGE_RANGE     _EE_VOLTAGE
-#define   _EE_PAGE_OR_SECTOR    SECTOR
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 7)
-#error  "Please Enter correct address, maximum is (7)"
-#endif
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR < 5)
-#error  "Please Enter correct address, minimum is (5)"
-#endif
-#endif
-
-#if defined(STM32G030xx_H)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_PAGE_OR_SECTOR    PAGE_NUM
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 31)
-#error  "Please Enter correct address, maximum is (31)"
-#endif
-#endif
-
-#if defined(STM32L433xx)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#define   _EE_PAGE_OR_SECTOR    PAGE_NUM
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 127)
-#error  "Please Enter correct address, maximum is (127)"
-#endif
-#endif
-
-#if defined(STM32L476xx)
-#define   _EE_SIZE              2048
-#define   _EE_ADDR_INUSE        (((uint32_t)0x08000000) | (_EE_SIZE * _EE_USE_FLASH_PAGE_OR_SECTOR))
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR < 256)
-#define   _EE_FLASH_BANK        FLASH_BANK_1
-#else
-#define   _EE_FLASH_BANK        FLASH_BANK_2
-#define   _EE_PAGE_OR_SECTOR    PAGE_NUM
-#if (_EE_USE_FLASH_PAGE_OR_SECTOR > 511)
-#error  "Please Enter correct address, maximum is (511)"
-#endif
-#endif
-#endif
 
 #if (_EE_USE_RAM_BYTE > 0)
 uint8_t ee_ram[_EE_USE_RAM_BYTE];

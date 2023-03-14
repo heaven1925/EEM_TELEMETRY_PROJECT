@@ -1175,6 +1175,164 @@ Discarded input sections
  .debug_frame   0x0000000000000000      0x158 ./Drivers/DS3231/Src/DS3231.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Drivers/DS3231/Src/DS3231.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .group         0x0000000000000000        0xc ./Drivers/EEPROM_Flash/Src/ee.o
+ .text          0x0000000000000000        0x0 ./Drivers/EEPROM_Flash/Src/ee.o
+ .data          0x0000000000000000        0x0 ./Drivers/EEPROM_Flash/Src/ee.o
+ .bss           0x0000000000000000        0x0 ./Drivers/EEPROM_Flash/Src/ee.o
+ .bss.ee_ram    0x0000000000000000      0x400 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_init  0x0000000000000000       0x16 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_format
+                0x0000000000000000       0x78 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_read  0x0000000000000000       0x84 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_write
+                0x0000000000000000      0x2c8 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_writeToRam
+                0x0000000000000000       0x44 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_commit
+                0x0000000000000000       0x30 ./Drivers/EEPROM_Flash/Src/ee.o
+ .text.ee_maxVirtualAddress
+                0x0000000000000000       0x12 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_info    0x0000000000000000      0x422 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_abbrev  0x0000000000000000      0x246 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_ranges  0x0000000000000000       0x40 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x333 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0xa7e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x2ad ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x2e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x28 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x8e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x51 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x103 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x6a ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x1df ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x1c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0xd9 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000     0x102d ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x11f ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000     0xb86c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x6d ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000     0x367e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x174 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x5c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x416 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x9fe ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x115 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0xf8 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0xa5 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x15f ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x287 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x5f ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x236 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x9e1 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x38b ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x176 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0xf9 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x132 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x23a ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x2e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x1b5 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0xd6 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x11a ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x85 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x89 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x225 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x8e6 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x47 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x295 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x126 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x1c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x52 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x1e ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x3c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x34 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x16 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x43 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x34 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x10 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x58 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x71 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x1c ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x12a ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000      0x341 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x10 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x35 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_macro   0x0000000000000000       0x20 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_line    0x0000000000000000      0xb28 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_str     0x0000000000000000    0x97496 ./Drivers/EEPROM_Flash/Src/ee.o
+ .comment       0x0000000000000000       0x51 ./Drivers/EEPROM_Flash/Src/ee.o
+ .debug_frame   0x0000000000000000      0x10c ./Drivers/EEPROM_Flash/Src/ee.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Drivers/EEPROM_Flash/Src/ee.o
  .group         0x0000000000000000        0xc ./Drivers/NEXTION/Src/nextion.o
  .group         0x0000000000000000        0xc ./Drivers/NEXTION/Src/nextion.o
  .group         0x0000000000000000        0xc ./Drivers/NEXTION/Src/nextion.o
@@ -4871,6 +5029,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x0000000000000000      0x12a ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x0000000000000000      0x341 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x0000000000000000       0x10 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x0000000000000000       0x35 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x0000000000000000       0x20 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x0000000000000000      0x103 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
@@ -5874,6 +6033,7 @@ Discarded input sections
  .text.Process_RTC_Run
                 0x0000000000000000       0x6c ./application/Src/app.o
  .debug_macro   0x0000000000000000      0xa7e ./application/Src/app.o
+ .debug_macro   0x0000000000000000       0x22 ./application/Src/app.o
  .debug_macro   0x0000000000000000       0x22 ./application/Src/app.o
  .debug_macro   0x0000000000000000       0x4c ./application/Src/app.o
  .debug_macro   0x0000000000000000       0x1e ./application/Src/app.o
@@ -7560,6 +7720,7 @@ LOAD ./Core/Src/system_stm32f4xx.o
 LOAD ./Core/Startup/startup_stm32f401rbtx.o
 LOAD ./Core/ThreadSafe/newlib_lock_glue.o
 LOAD ./Drivers/DS3231/Src/DS3231.o
+LOAD ./Drivers/EEPROM_Flash/Src/ee.o
 LOAD ./Drivers/NEXTION/Src/nextion.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o
@@ -8234,18 +8395,17 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
                 0x00000000080073f0        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
                 0x00000000080073f0                ModuleNEXTION_HWInit
  .text.ModuleNEXTION_SWInit
-                0x00000000080073fe        0xc ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+                0x00000000080073fe        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
                 0x00000000080073fe                ModuleNEXTION_SWInit
  .text.ModuleNEXTION_StartUP
-                0x000000000800740a       0x10 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
-                0x000000000800740a                ModuleNEXTION_StartUP
+                0x000000000800740c       0x10 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+                0x000000000800740c                ModuleNEXTION_StartUP
  .text.ModuleNEXTION_MAIN_Routine
-                0x000000000800741a        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
-                0x000000000800741a                ModuleNEXTION_MAIN_Routine
+                0x000000000800741c        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+                0x000000000800741c                ModuleNEXTION_MAIN_Routine
  .text.ModuleNEXTION_MAIN_Process
-                0x0000000008007428        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
-                0x0000000008007428                ModuleNEXTION_MAIN_Process
- *fill*         0x0000000008007436        0x2 
+                0x000000000800742a        0xe ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+                0x000000000800742a                ModuleNEXTION_MAIN_Process
  .text.ModuleNEXTION_MAIN
                 0x0000000008007438       0x50 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
                 0x0000000008007438                ModuleNEXTION_MAIN
@@ -8735,7 +8895,7 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
 LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x0000000000000000    0x1ddfd
+.debug_info     0x0000000000000000    0x1ddd8
  .debug_info    0x0000000000000000     0x2075 ./Core/Src/main.o
  .debug_info    0x0000000000002075     0x1ab9 ./Core/Src/stm32f4xx_hal_msp.o
  .debug_info    0x0000000000003b2e      0x173 ./Core/Src/stm32f4xx_it.o
@@ -8761,13 +8921,13 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_info    0x000000000001c5b6      0xf77 ./application/Src/app.o
  .debug_info    0x000000000001d52d      0x13d ./features/ModuleCAN/Src/ModuleCAN.o
  .debug_info    0x000000000001d66a      0x13d ./features/ModuleFlash/Src/ModuleFlash.o
- .debug_info    0x000000000001d7a7      0x162 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_info    0x000000000001d909      0x13d ./features/ModuleRTC/Src/ModuleRTC.o
- .debug_info    0x000000000001da46      0x13d ./features/ModuleSDCard/Src/ModuleSDCard.o
- .debug_info    0x000000000001db83      0x13d ./features/ModuleWIFI/Src/ModuleWIFI.o
- .debug_info    0x000000000001dcc0      0x13d ./features/TelemetryMAIN/Src/TelemetryMAIN.o
+ .debug_info    0x000000000001d7a7      0x13d ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_info    0x000000000001d8e4      0x13d ./features/ModuleRTC/Src/ModuleRTC.o
+ .debug_info    0x000000000001da21      0x13d ./features/ModuleSDCard/Src/ModuleSDCard.o
+ .debug_info    0x000000000001db5e      0x13d ./features/ModuleWIFI/Src/ModuleWIFI.o
+ .debug_info    0x000000000001dc9b      0x13d ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
-.debug_abbrev   0x0000000000000000     0x3c35
+.debug_abbrev   0x0000000000000000     0x3bec
  .debug_abbrev  0x0000000000000000      0x317 ./Core/Src/main.o
  .debug_abbrev  0x0000000000000317      0x226 ./Core/Src/stm32f4xx_hal_msp.o
  .debug_abbrev  0x000000000000053d       0xb4 ./Core/Src/stm32f4xx_it.o
@@ -8793,11 +8953,11 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_abbrev  0x0000000000003485      0x30e ./application/Src/app.o
  .debug_abbrev  0x0000000000003793       0x9f ./features/ModuleCAN/Src/ModuleCAN.o
  .debug_abbrev  0x0000000000003832       0x9f ./features/ModuleFlash/Src/ModuleFlash.o
- .debug_abbrev  0x00000000000038d1       0xe8 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_abbrev  0x00000000000039b9       0x9f ./features/ModuleRTC/Src/ModuleRTC.o
- .debug_abbrev  0x0000000000003a58       0x9f ./features/ModuleSDCard/Src/ModuleSDCard.o
- .debug_abbrev  0x0000000000003af7       0x9f ./features/ModuleWIFI/Src/ModuleWIFI.o
- .debug_abbrev  0x0000000000003b96       0x9f ./features/TelemetryMAIN/Src/TelemetryMAIN.o
+ .debug_abbrev  0x00000000000038d1       0x9f ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_abbrev  0x0000000000003970       0x9f ./features/ModuleRTC/Src/ModuleRTC.o
+ .debug_abbrev  0x0000000000003a0f       0x9f ./features/ModuleSDCard/Src/ModuleSDCard.o
+ .debug_abbrev  0x0000000000003aae       0x9f ./features/ModuleWIFI/Src/ModuleWIFI.o
+ .debug_abbrev  0x0000000000003b4d       0x9f ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
 .debug_aranges  0x0000000000000000     0x1be8
  .debug_aranges
@@ -8893,7 +9053,7 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_ranges  0x00000000000019e8       0x38 ./features/ModuleWIFI/Src/ModuleWIFI.o
  .debug_ranges  0x0000000000001a20       0x38 ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
-.debug_macro    0x0000000000000000     0x6589
+.debug_macro    0x0000000000000000     0x6557
  .debug_macro   0x0000000000000000      0x2b8 ./Core/Src/main.o
  .debug_macro   0x00000000000002b8      0x169 ./Core/Src/main.o
  .debug_macro   0x0000000000000421       0x66 ./Core/Src/main.o
@@ -8914,37 +9074,35 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00000000000020c6      0x21a ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o
  .debug_macro   0x00000000000022e0      0x410 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_macro   0x00000000000026f0       0x10 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x0000000000002700       0x10 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x0000000000002710       0xd3 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x00000000000027e3       0x91 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x0000000000002874       0x8d ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x0000000000002901       0x9a ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x000000000000299b       0x22 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_macro   0x00000000000029bd      0x187 ./Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_macro   0x0000000000002b44      0x216 ./Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_macro   0x0000000000002d5a       0x87 ./Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_macro   0x0000000000002de1      0x27f ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_macro   0x0000000000003060       0x10 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_macro   0x0000000000003070      0x1dc ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_macro   0x000000000000324c       0x97 ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_macro   0x00000000000032e3      0x196 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x0000000000003479      0x1ae ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_macro   0x0000000000003627      0x579 ./application/Src/app.o
- .debug_macro   0x0000000000003ba0       0x22 ./application/Src/app.o
- .debug_macro   0x0000000000003bc2      0x119 ./application/Src/app.o
- .debug_macro   0x0000000000003cdb      0x19b ./application/Src/app.o
- .debug_macro   0x0000000000003e76       0x6a ./application/Src/app.o
- .debug_macro   0x0000000000003ee0       0xb2 ./application/Src/app.o
- .debug_macro   0x0000000000003f92      0x55c ./features/ModuleCAN/Src/ModuleCAN.o
- .debug_macro   0x00000000000044ee      0x570 ./features/ModuleFlash/Src/ModuleFlash.o
- .debug_macro   0x0000000000004a5e      0x56f ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_macro   0x0000000000004fcd       0x4c ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_macro   0x0000000000005019      0x55c ./features/ModuleRTC/Src/ModuleRTC.o
- .debug_macro   0x0000000000005575      0x55c ./features/ModuleSDCard/Src/ModuleSDCard.o
- .debug_macro   0x0000000000005ad1      0x55c ./features/ModuleWIFI/Src/ModuleWIFI.o
- .debug_macro   0x000000000000602d      0x55c ./features/TelemetryMAIN/Src/TelemetryMAIN.o
+ .debug_macro   0x0000000000002700       0xd3 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x00000000000027d3       0x91 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x0000000000002864       0x8d ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x00000000000028f1       0x9a ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x000000000000298b       0x22 ./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_macro   0x00000000000029ad      0x187 ./Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_macro   0x0000000000002b34      0x216 ./Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_macro   0x0000000000002d4a       0x87 ./Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_macro   0x0000000000002dd1      0x27f ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_macro   0x0000000000003050       0x10 ./Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_macro   0x0000000000003060      0x1dc ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_macro   0x000000000000323c       0x97 ./Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_macro   0x00000000000032d3      0x196 ./Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x0000000000003469      0x1ae ./Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_macro   0x0000000000003617      0x579 ./application/Src/app.o
+ .debug_macro   0x0000000000003b90      0x119 ./application/Src/app.o
+ .debug_macro   0x0000000000003ca9      0x19b ./application/Src/app.o
+ .debug_macro   0x0000000000003e44       0x6a ./application/Src/app.o
+ .debug_macro   0x0000000000003eae       0xb2 ./application/Src/app.o
+ .debug_macro   0x0000000000003f60      0x55c ./features/ModuleCAN/Src/ModuleCAN.o
+ .debug_macro   0x00000000000044bc      0x570 ./features/ModuleFlash/Src/ModuleFlash.o
+ .debug_macro   0x0000000000004a2c      0x56f ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_macro   0x0000000000004f9b       0x4c ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_macro   0x0000000000004fe7      0x55c ./features/ModuleRTC/Src/ModuleRTC.o
+ .debug_macro   0x0000000000005543      0x55c ./features/ModuleSDCard/Src/ModuleSDCard.o
+ .debug_macro   0x0000000000005a9f      0x55c ./features/ModuleWIFI/Src/ModuleWIFI.o
+ .debug_macro   0x0000000000005ffb      0x55c ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
-.debug_line     0x0000000000000000    0x23633
+.debug_line     0x0000000000000000    0x2362e
  .debug_line    0x0000000000000000      0xd05 ./Core/Src/main.o
  .debug_line    0x0000000000000d05      0xb8f ./Core/Src/stm32f4xx_hal_msp.o
  .debug_line    0x0000000000001894      0x92b ./Core/Src/stm32f4xx_it.o
@@ -8970,11 +9128,11 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x000000000001ba83     0x1279 ./application/Src/app.o
  .debug_line    0x000000000001ccfc      0xee5 ./features/ModuleCAN/Src/ModuleCAN.o
  .debug_line    0x000000000001dbe1      0xf6d ./features/ModuleFlash/Src/ModuleFlash.o
- .debug_line    0x000000000001eb4e      0xf4a ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_line    0x000000000001fa98      0xee2 ./features/ModuleRTC/Src/ModuleRTC.o
- .debug_line    0x000000000002097a      0xeeb ./features/ModuleSDCard/Src/ModuleSDCard.o
- .debug_line    0x0000000000021865      0xee4 ./features/ModuleWIFI/Src/ModuleWIFI.o
- .debug_line    0x0000000000022749      0xeea ./features/TelemetryMAIN/Src/TelemetryMAIN.o
+ .debug_line    0x000000000001eb4e      0xf45 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_line    0x000000000001fa93      0xee2 ./features/ModuleRTC/Src/ModuleRTC.o
+ .debug_line    0x0000000000020975      0xeeb ./features/ModuleSDCard/Src/ModuleSDCard.o
+ .debug_line    0x0000000000021860      0xee4 ./features/ModuleWIFI/Src/ModuleWIFI.o
+ .debug_line    0x0000000000022744      0xeea ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
 .debug_str      0x0000000000000000    0xaa289
  .debug_str     0x0000000000000000    0x9a6eb ./Core/Src/main.o
@@ -9028,7 +9186,7 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_str     0x00000000000a994f      0x161 ./features/ModuleFlash/Src/ModuleFlash.o
                                       0x9fc77 (size before relaxing)
  .debug_str     0x00000000000a9ab0      0x256 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
-                                      0x9fd75 (size before relaxing)
+                                      0x9fd62 (size before relaxing)
  .debug_str     0x00000000000a9d06      0x145 ./features/ModuleRTC/Src/ModuleRTC.o
                                       0x9fc1f (size before relaxing)
  .debug_str     0x00000000000a9e4b      0x170 ./features/ModuleSDCard/Src/ModuleSDCard.o
@@ -9070,7 +9228,7 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .comment       0x0000000000000050       0x51 ./features/ModuleWIFI/Src/ModuleWIFI.o
  .comment       0x0000000000000050       0x51 ./features/TelemetryMAIN/Src/TelemetryMAIN.o
 
-.debug_frame    0x0000000000000000     0x7508
+.debug_frame    0x0000000000000000     0x750c
  .debug_frame   0x0000000000000000      0x214 ./Core/Src/main.o
  .debug_frame   0x0000000000000214      0x1c8 ./Core/Src/stm32f4xx_hal_msp.o
  .debug_frame   0x00000000000003dc       0xfc ./Core/Src/stm32f4xx_it.o
@@ -9095,13 +9253,13 @@ LOAD c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_frame   0x0000000000006c68      0x258 ./application/Src/app.o
  .debug_frame   0x0000000000006ec0       0xc8 ./features/ModuleCAN/Src/ModuleCAN.o
  .debug_frame   0x0000000000006f88       0xc8 ./features/ModuleFlash/Src/ModuleFlash.o
- .debug_frame   0x0000000000007050       0xc4 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
- .debug_frame   0x0000000000007114       0xc8 ./features/ModuleRTC/Src/ModuleRTC.o
- .debug_frame   0x00000000000071dc       0xc8 ./features/ModuleSDCard/Src/ModuleSDCard.o
- .debug_frame   0x00000000000072a4       0xc8 ./features/ModuleWIFI/Src/ModuleWIFI.o
- .debug_frame   0x000000000000736c       0xc8 ./features/TelemetryMAIN/Src/TelemetryMAIN.o
- .debug_frame   0x0000000000007434       0x2c c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000007460       0x28 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000000000007488       0x20 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00000000000074a8       0x2c c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00000000000074d4       0x34 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000007050       0xc8 ./features/ModuleNEXTION/Src/ModuleNEXTION.o
+ .debug_frame   0x0000000000007118       0xc8 ./features/ModuleRTC/Src/ModuleRTC.o
+ .debug_frame   0x00000000000071e0       0xc8 ./features/ModuleSDCard/Src/ModuleSDCard.o
+ .debug_frame   0x00000000000072a8       0xc8 ./features/ModuleWIFI/Src/ModuleWIFI.o
+ .debug_frame   0x0000000000007370       0xc8 ./features/TelemetryMAIN/Src/TelemetryMAIN.o
+ .debug_frame   0x0000000000007438       0x2c c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000007464       0x28 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000000000000748c       0x20 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000000074ac       0x2c c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00000000000074d8       0x34 c:/st/stm32cubeide_1.11.2/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)

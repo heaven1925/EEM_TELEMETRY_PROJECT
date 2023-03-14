@@ -11,6 +11,7 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleFLASH_private.h"
+#include "ee.h"
 
 /************************** DEFINES ********************************************/
 #define	MODULEFLASH_MAIN_THREAD
