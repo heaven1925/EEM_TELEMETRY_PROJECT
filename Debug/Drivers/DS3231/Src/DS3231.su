@@ -1,8 +1,6 @@
-../Drivers/DS3231/Src/DS3231.c:28:6:DEBUG_CTOR	16	static
-../Drivers/DS3231/Src/DS3231.c:46:6:CTOR_DS3231	96	static
+../Drivers/DS3231/Src/DS3231.c:46:6:CTOR_DS3231	24	static
 ../Drivers/DS3231/Src/DS3231.c:67:6:setTime	40	static
 ../Drivers/DS3231/Src/DS3231.c:77:9:getTime	40	static
 ../Drivers/DS3231/Src/DS3231.c:92:6:printTime	24	static
 ../Drivers/DS3231/Src/DS3231.c:100:6:printDate	24	static
 ../Drivers/DS3231/Src/DS3231.c:109:12:bcdToDec	16	static
-../Drivers/DS3231/Src/DS3231.c:122:6:DEBUG_TX	16	static

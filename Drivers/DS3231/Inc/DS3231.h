@@ -15,7 +15,7 @@
 /*******************DEFINES*************************/
 
 #define   DS3231_ADRESS      0xD0
-#define   DEBUG_MODE
+
 
 
 typedef struct __packed{

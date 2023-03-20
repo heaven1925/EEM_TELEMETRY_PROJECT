@@ -9,7 +9,7 @@
 
 
 
-#if defined(STM32F401xC)||defined(STM32F401xD)||defined(STM32F446xD)
+#if defined(STM32F401xC)||defined(STM32F401xD)||defined(STM32F446xx)
 #define   _EE_SIZE              (1024 * 128)
 #define   _EE_ADDR_INUSE        (((uint32_t)0x08020000) | (_EE_SIZE*(_EE_USE_FLASH_PAGE_OR_SECTOR - 5)))
 #define   _EE_FLASH_BANK        FLASH_BANK_1

@@ -99,6 +99,23 @@ void ModuleSDCard_StartUP(void)
 
 void ModuleSDCard_MAIN_Routine(void)
 {
+	fresult = f_mount(&fs, "", 0);
+
+	  	/* Check free space */
+	  	   f_getfree("", &fre_clust, &pfs);
+
+	  	   total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
+
+	  	   free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
+
+	    	/* Open file to write/ create a file if it doesn't exist */
+	        fresult = f_open(&file, "file1.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+
+	    	/* Writing text */
+	    	f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
+
+	    	/* Close file */
+	    	fresult = f_close(&file);
 
 }
 
