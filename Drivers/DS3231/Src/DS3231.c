@@ -2,10 +2,11 @@
 #include "DS3231.h"
 
 
+static uint8_t decToBcd(uint8_t num,decToBcd_ut *decNum);
+static uint8_t bcdToDec(uint8_t num,decToBcd_ut* bcdNum);
 
-static int bcdToDec(uint8_t val);
 
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 
 const ds3231_dbg_ops dbg_ops =
 {
@@ -23,7 +24,7 @@ const ds3231_ops  ops =
 };
 
 
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 
 void DEBUG_CTOR(ds3231_dbg * param , UART_HandleTypeDef _huart,ds3231_dbg_ops _ops)
 {
@@ -46,7 +47,7 @@ void DEBUG_CTOR(ds3231_dbg * param , UART_HandleTypeDef _huart,ds3231_dbg_ops _o
 void CTOR_DS3231(ds3231_st* param , I2C_HandleTypeDef _hi2c, ds3231_ops _ops, time_st* _time, UART_HandleTypeDef _huart)
 {
 
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 
 	 DEBUG_CTOR(&param->debug, _huart , dbg_ops);
 
@@ -64,9 +65,14 @@ void CTOR_DS3231(ds3231_st* param , I2C_HandleTypeDef _hi2c, ds3231_ops _ops, ti
 }
 
 
-void setTime(ds3231_obj* obj)
+void setTime(ds3231_obj* obj,decToBcd_ut*num)
 {
 	uint8_t setTime[7];
+
+	for(uint8_t loopVal = 0 ; loopVal <= sizeof(time_st) ; loopVal++)
+	{
+		*( &obj->time.seconds + loopVal ) =  decToBcd(*(&obj->time.seconds+loopVal), num);
+	}
 
 	memcpy( &setTime[0] , (uint8_t*)&obj->time.seconds , 7 );
 
@@ -74,14 +80,14 @@ void setTime(ds3231_obj* obj)
 }
 
 
-time_st getTime(ds3231_obj* obj)
+time_st getTime(ds3231_obj* obj,decToBcd_ut*num)
 {
 
 	HAL_I2C_Mem_Read(&obj->hi2c, DS3231_ADRESS, 0x00, 1, (uint8_t*)&obj->time.seconds , 7, 1000);
 
 	for(uint8_t loopVal = 0 ; loopVal <= sizeof(time_st) ; loopVal++)
 	{
-		*( &obj->time.seconds + loopVal ) =  bcdToDec( *( &obj->time.seconds + loopVal ) );
+		*( &obj->time.seconds + loopVal ) =  bcdToDec( *( &obj->time.seconds + loopVal ),num );
 	}
 
 	return obj->time;
@@ -101,23 +107,46 @@ void printDate(ds3231_obj* obj)
 {
 	sprintf(&obj->dateBuffer[0], "%02d:%02d:%04d:", obj->time.dayofweek ,
 				                                    obj->time.month,
-				                                    obj->time.year );
+				                                    ((MILLENNIUM)+(obj->time.year)));
 }
 
 
 // Convert binary coded decimal to normal decimal numbers
-static int bcdToDec(uint8_t val)
+
+static uint8_t decToBcd(uint8_t num,decToBcd_ut *decNum)
 {
-  return (int)( (val/16*10) + (val%16) );
+	uint8_t firstDigit  ;
+	uint8_t secondDigit ;
+
+	firstDigit = num % MOD_TEN;
+	secondDigit = num / MOD_TEN;
+
+	decNum->bits.decFirstFour = firstDigit;
+	decNum->bits.decLastFour = secondDigit;
+
+
+	return decNum->BCD;
+
 }
 
-/* uint8_t decToBcd(int val)
+static uint8_t bcdToDec(uint8_t num,decToBcd_ut* bcdNum)
 {
-  return (uint8_t)( (val/10*16) + (val%10) );
-}*/
+	uint8_t tempVal;
+
+	bcdNum->BCD = num;
+
+	tempVal = bcdNum->bits.decFirstFour;
+	tempVal += bcdNum->bits.decLastFour*MOD_TEN;
 
 
-#if defined(DEBUG_MODE)
+	return tempVal;
+
+}
+
+
+
+
+#if defined(DEBUG_MODE_RTC)
 
 void DEBUG_TX(ds3231_dbg_obj* obj,ds3231_obj * object)
 {

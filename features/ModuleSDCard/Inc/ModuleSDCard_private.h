@@ -23,22 +23,11 @@
 #include "TelemetryMAIN_public.h"
 #include "ModuleWIFI_public.h"
 
-#include "fatfs.h"
+
 
 
 
 /*********************** DEFINES ***********************************************/
-FATFS fs;
-FIL file;
-
-FRESULT fresult;
-char buffer[1024];
-
-UINT br,bw;
-
-FATFS*pfs;
-DWORD fre_clust;
-uint32_t total, free_space;
 
 	
 	

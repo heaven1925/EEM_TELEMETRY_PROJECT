@@ -14,8 +14,21 @@
 
 /*******************DEFINES*************************/
 
-#define   DS3231_ADRESS      0xD0
+#define DS3231_ADRESS        0xD0
+#define MOD_TEN              0x0A
+#define MILLENNIUM           20000
 
+typedef union {
+
+	uint8_t BCD;
+
+	struct {
+
+		uint8_t  decFirstFour :4;
+		uint8_t  decLastFour  :4;
+	}bits;
+
+ }decToBcd_ut;
 
 
 typedef struct __packed{
@@ -39,14 +52,14 @@ typedef struct {
 
 typedef struct
 {
-	void  	 (*setTime)(ds3231_obj* obj);
-	time_st  (*getTime)(ds3231_obj* obj);
+	void  	 (*setTime)(ds3231_obj* obj,decToBcd_ut*num);
+	time_st  (*getTime)(ds3231_obj* obj,decToBcd_ut*num);
 	void	 (*printTime)(ds3231_obj* obj);
 	void	 (*printDate)(ds3231_obj* obj);
 }ds3231_ops;
 
 
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 
 typedef struct
 {
@@ -79,7 +92,7 @@ typedef struct
 {
 	ds3231_obj 	obj;
 	ds3231_ops ops;
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 	ds3231_dbg	debug;
 #endif
 }ds3231_st;
@@ -91,10 +104,13 @@ void CTOR_DS3231(ds3231_st* param , I2C_HandleTypeDef _hi2c, ds3231_ops _ops, ti
 #if defined(DEBUG_MODE)
 void DEBUG_CTOR(ds3231_dbg * param , UART_HandleTypeDef _huart,ds3231_dbg_ops _ops);
 #endif
-void 	setTime(ds3231_obj* obj);
-time_st getTime(ds3231_obj* obj);
+void 	setTime(ds3231_obj* obj,decToBcd_ut*num);
+time_st getTime(ds3231_obj* obj,decToBcd_ut*num);
 void 	printTime(ds3231_obj* obj);
 void 	printDate(ds3231_obj* obj);
+
+
+
 
 
 /*******************EXTERN VARIABLES *************************/
@@ -102,7 +118,7 @@ void 	printDate(ds3231_obj* obj);
 extern const ds3231_ops  ops ;
 
 
-#if defined(DEBUG_MODE)
+#if defined(DEBUG_MODE_RTC)
 extern const ds3231_dbg_ops dbg_ops;
 #endif
 

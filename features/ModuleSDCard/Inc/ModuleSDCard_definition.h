@@ -28,6 +28,16 @@ typedef enum
 
 }ModuleSDCard_MAIN_State_et;
 
+
+
+typedef enum
+{
+	ModuleSDCard_ROUTINE_State_WRITE  = 0,
+	ModuleSDCard_ROUTINE_State_READ      ,
+
+}ModuleSDCard_ROUTINE_State_et;
+
+
 	
 
 /********************** FUNCTION PROTOTYPE **************************************/	

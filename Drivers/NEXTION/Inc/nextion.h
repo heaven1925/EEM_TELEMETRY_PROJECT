@@ -9,6 +9,7 @@
 #include "string.h"
 #include "stdio.h"
 #include "stdint.h"
+#include "stdbool.h"
 
 #include "stm32f4xx_hal.h"
 
@@ -19,13 +20,14 @@
 typedef struct {
 	UART_HandleTypeDef  huart;
 	char   nxTımeout;
-	char   txCommand[10];
+	char   txCommand[20];
+	char   txBuffCmd[20];
 }nextion_obj;
 
 
 typedef struct
 {
-	void  	 (*sendCmd)(nextion_obj * obj,char*cmd);
+	void  	 (*sendCmd)(nextion_obj * obj,char*cmd,bool status);
 	void     (*sendNum)(nextion_obj * obj,char*cmd,uint16_t num);
 
 }nextion_ops;
@@ -76,7 +78,7 @@ void CTOR_nextion(nextion_St* param , UART_HandleTypeDef _huart, nextion_ops _op
 #if defined(DEBUG_MODE)
 void DEBUG_CTOR(ds3231_dbg * param , UART_HandleTypeDef _huart,ds3231_dbg_ops _ops);
 #endif
-void sendCmd(nextion_obj*obj , char*cmd);
+void sendCmd(nextion_obj*obj , char*cmd, bool status);
 void sendNum(nextion_obj* obj , char*cmd , uint16_t num);
 
 

@@ -33,6 +33,8 @@
 #define BIT_RESET(addr, shift) 	(addr & ~(1 << shift))
 #define BIT_GET(addr, shift) 	(addr & (1 << shift))
 
+
+
 //[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 
 #define DEBUG_MSG_SIZE  6
@@ -61,7 +63,7 @@ typedef union
 	U32 U32;
     struct
     {
-		U8 byte0;
+		U8 byte0 ;
 		U8 byte1 ;
 		U8 byte2 ;
 		U8 byte3 ;
@@ -69,6 +71,8 @@ typedef union
 }U32Union;
 
 //]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+
+
 
 #define	ITC_UT_BYTE_SIZE			1
 typedef union{
@@ -149,6 +153,7 @@ typedef struct
 // ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
 
 extern GL_st __GL;	//@INFO: attribute assigned at application.c
+
 
 
 #endif /* INC_TYPES_H_ */

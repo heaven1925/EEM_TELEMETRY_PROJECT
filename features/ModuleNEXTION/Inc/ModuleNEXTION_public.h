@@ -19,13 +19,15 @@
 
 
 /*********************** DEFINES ***********************************************/
-extern	 void 	ModuleNEXTION_StartUP	(void);
-extern 	 void 	ModuleNEXTION_MAIN		(void);
-	
+
+extern nextionIkon_ut ikon;
+
+extern ModuleNEXTION_FLAG_State_et ModuleNEXTION_FLAG_State;
 	
 /********************** FUNCTION PROTOTYPE **************************************/	
 	
-
+extern	 void 	ModuleNEXTION_StartUP	(void);
+extern 	 void 	ModuleNEXTION_MAIN		(void);
 	
 	
 	

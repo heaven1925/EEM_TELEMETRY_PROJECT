@@ -58,39 +58,47 @@ void CTOR_nextion(nextion_St* param , UART_HandleTypeDef _huart, nextion_ops _op
 	param->obj.huart=_huart;
 
 
-	memset(&param->obj.txCommand , 0x00 , sizeof(param->obj.txCommand));
+	memset(&param->obj.txCommand,0x00,sizeof(param->obj.txCommand));
+
+	memset(&param->obj.txBuffCmd,0x00,sizeof(param->obj.txBuffCmd));
 
 }
 
 
-void sendCmd(nextion_obj*obj , char*cmd)
+void sendCmd(nextion_obj*obj,char*cmd, bool status)
 {
-	char lastCmd[3] = {0xFF,0xFF,0xFF};
+	char lastCmd[4] = {0xFF,0xFF,0xFF};
 
 	memcpy(&obj->txCommand[0],cmd,strlen(cmd));
 
+	sprintf(obj->txBuffCmd,"%s.val=%d",cmd,status); // MAKRO İLE SET RESET EDILECEK
 
-	HAL_UART_Transmit(&obj->huart, (uint8_t*)obj->txCommand, sizeof(obj->txCommand), obj->nxTımeout);
 
-	HAL_UART_Transmit(&obj->huart, (uint8_t*)lastCmd, sizeof(obj->txCommand), obj->nxTımeout);
+	HAL_UART_Transmit(&obj->huart, (uint8_t*)obj->txBuffCmd, strlen(obj->txBuffCmd),obj->nxTımeout);
+
+	HAL_UART_Transmit(&obj->huart, (uint8_t*)lastCmd, strlen(lastCmd), obj->nxTımeout);
+
+	memset(obj->txCommand , 0x00 , sizeof(obj->txCommand));
+
+    memset(obj->txBuffCmd,0x00,sizeof(obj->txBuffCmd));
 }
 
 
 void sendNum(nextion_obj* obj , char*cmd , uint16_t num)
 {
-	char lastCmd[3] = {0xFF,0xFF,0xFF};
-
-	char cmdCpy[15];
+	char lastCmd[4] = {0xFF,0xFF,0xFF};
 
 	memcpy(&obj->txCommand[0],cmd,strlen(cmd));
 
+	sprintf(obj->txBuffCmd,"%s.val=%d",cmd,num);
 
-	sprintf(cmdCpy,"%s=%d",obj->txCommand,num);
-
-
-	HAL_UART_Transmit(&obj->huart, (uint8_t*)cmdCpy, sizeof(obj->txCommand), obj->nxTımeout);
+	HAL_UART_Transmit(&obj->huart, (uint8_t*)obj->txBuffCmd, sizeof(obj->txCommand), obj->nxTımeout);
 
 	HAL_UART_Transmit(&obj->huart, (uint8_t*)lastCmd, sizeof(obj->txCommand), obj->nxTımeout);
+
+	memset(obj->txCommand , 0x00 , sizeof(obj->txCommand));
+
+    memset(obj->txBuffCmd,0x00,sizeof(obj->txBuffCmd));
 
 }
 

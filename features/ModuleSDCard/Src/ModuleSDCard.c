@@ -11,11 +11,22 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleSDCard_private.h"
+#include "fatfs_sd.h"
+#include "fatfs.h"
+
+
 
 /************************** DEFINES ********************************************/
 #define	MODULESDCARD_MAIN_THREAD
 
 ModuleSDCard_MAIN_State_et ModuleSDCard_MAIN_State = ModuleSDCard_MAIN_State_IDLE;
+
+ModuleSDCard_ROUTINE_State_et SDCard_ROUTINE_STATE;
+
+FATFS *fs;
+FIL file;
+uint8_t byteread;
+char bufferSDcard[20]="HELLO WORLD";
 
 
 #if 1	/* Init Functions */
@@ -29,18 +40,17 @@ ModuleSDCard_MAIN_State_et ModuleSDCard_MAIN_State = ModuleSDCard_MAIN_State_IDL
 ********************************************************************************/
 void ModuleSDCard_HWInit(void)
 {
+	FRESULT fresult;
 
-//    fresult = f_mount(&fs, "", 0);
-//
-//	/* Check free space */
-//	   f_getfree("", &fre_clust, &pfs);
-//
-//	   total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
-//
-//	   free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
-//
+    fresult = f_mount(fs, "", 0);
+
+    if(fresult!=FR_OK){
+
+    	ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
+    }
+
 //	/* Open file to write/ create a file if it doesn't exist */
-//    fresult = f_open(&file, "file1.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+//
 //
 //	/* Writing text */
 //	f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
@@ -61,7 +71,10 @@ void ModuleSDCard_HWInit(void)
 ********************************************************************************/
 void ModuleSDCard_SWInit(void)
 {
-	//@INFO: WIFI thread'ine ait yazilimsal init fonksiyonları
+
+
+
+	 //@INFO: WIFI thread'ine ait yazilimsal init fonksiyonları
 }
 
 /*******************************************************************************
@@ -94,28 +107,47 @@ void ModuleSDCard_StartUP(void)
 	 @param   :
 	 @return  :
 	 @date	  :
-	 @INFO		:
+	 @INFO	  :
 ********************************************************************************/
 
 void ModuleSDCard_MAIN_Routine(void)
 {
-	fresult = f_mount(&fs, "", 0);
 
-	  	/* Check free space */
-	  	   f_getfree("", &fre_clust, &pfs);
+	 FRESULT fresult;
 
-	  	   total = (uint32_t)((pfs->n_fatent - 2) * pfs->csize * 0.5);
 
-	  	   free_space = (uint32_t)(fre_clust * pfs->csize * 0.5);
+      fresult = f_open(&file, "SDCard_Logger.txt", FA_OPEN_ALWAYS | FA_OPEN_APPEND| FA_WRITE);
+      if(fresult!=FR_OK)
+      {
 
-	    	/* Open file to write/ create a file if it doesn't exist */
-	        fresult = f_open(&file, "file1.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE);
+    	    ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
+      }
 
-	    	/* Writing text */
-	    	f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
 
-	    	/* Close file */
-	    	fresult = f_close(&file);
+      f_printf(&file, "%s\n",bufferSDcard,50);
+     /* Close file */
+
+       fresult = f_close(&file);
+
+       if(fresult!=FR_OK)
+       {
+
+           	 ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
+
+       }
+
+	    	/* Writing text string */
+	   f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
+
+
+
+	       /* Close file */
+	    fresult = f_close(&file);
+
+		if(fresult!=FR_OK){
+
+		    	ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
+		  }
 
 }
 

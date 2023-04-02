@@ -11,11 +11,21 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleRTC_private.h"
+#include "DS3231.h"
 
 /************************** DEFINES ********************************************/
 #define	MODULERTC_MAIN_THREAD
 
 ModuleRTC_MAIN_State_et ModuleRTC_MAIN_State = ModuleRTC_MAIN_State_IDLE;
+
+
+ds3231_st ds3231={0};
+
+time_st timeTemp;
+
+time_st iniTime={.seconds=10,.minutes=10,.hour=10,.dayofweek=10,.dayofmonth=10,.month=10,.year=10};
+
+decToBcd_ut  bcdFormat;
 
 
 #if 1	/* Init Functions */
@@ -29,7 +39,15 @@ ModuleRTC_MAIN_State_et ModuleRTC_MAIN_State = ModuleRTC_MAIN_State_IDLE;
 ********************************************************************************/
 void ModuleRTC_HWInit(void)
 {
-	//@INFO: WIFI thread'ine ait donanımsal init fonksiyonları
+
+	CTOR_DS3231(&ds3231,
+			      hi2c1,
+			        ops,
+			    &iniTime,
+				 huart2);
+
+
+	//@INFO: RTC thread'ine ait donanımsal init fonksiyonları
 }
 
 /*******************************************************************************
@@ -37,11 +55,14 @@ void ModuleRTC_HWInit(void)
 	 @param   :
 	 @return  :
 	 @date	  :
-	 @INFO		:
+	 @INFO	  :
 ********************************************************************************/
 void ModuleRTC_SWInit(void)
 {
-	//@INFO: WIFI thread'ine ait yazilimsal init fonksiyonları
+
+	ds3231.ops.setTime(&ds3231.obj,&bcdFormat);
+
+	//@INFO: RTC thread'ine ait yazilimsal init fonksiyonları
 }
 
 /*******************************************************************************
@@ -74,11 +95,14 @@ void ModuleRTC_StartUP(void)
 	 @param   :
 	 @return  :
 	 @date	  :
-	 @INFO		:
+	 @INFO	  :
 ********************************************************************************/
 
 void ModuleRTC_MAIN_Routine(void)
 {
+
+
+    timeTemp=ds3231.ops.getTime(&ds3231.obj,&bcdFormat);
 
 }
 
