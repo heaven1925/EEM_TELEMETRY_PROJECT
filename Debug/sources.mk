@@ -29,8 +29,6 @@ Drivers/EEPROM_Flash/Src \
 Drivers/NEXTION/Src \
 Drivers/SD_Card/Src \
 Drivers/STM32F4xx_HAL_Driver/Src \
-Drivers/SX1262/src \
-Drivers/rfAdaptor/src \
 FATFS/App \
 FATFS/Target \
 Middlewares/Third_Party/FatFs/src \

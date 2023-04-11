@@ -11,6 +11,7 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleWIFI_private.h"
+#include "types.h"
 
 /************************** DEFINES ********************************************/
 #define	MODULEWIFI_MAIN_THREAD

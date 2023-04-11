@@ -11,6 +11,7 @@
 /************************** INCLUDES *******************************************/
 
 #include "TelemetryMAIN_private.h"
+#include "types.h"
 
 /************************** DEFINES ********************************************/
 #define	TELEMETRY_MAIN_THREAD

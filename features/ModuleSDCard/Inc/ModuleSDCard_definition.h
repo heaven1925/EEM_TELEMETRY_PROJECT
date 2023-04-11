@@ -15,7 +15,7 @@
 	
 /*********************** INCLUDES **********************************************/
 
-#include "types.h"
+#include <stdint.h>
 
 
 /*********************** DEFINES ***********************************************/
@@ -28,15 +28,13 @@ typedef enum
 
 }ModuleSDCard_MAIN_State_et;
 
-
-
-typedef enum
+typedef struct __packed
 {
-	ModuleSDCard_ROUTINE_State_WRITE  = 0,
-	ModuleSDCard_ROUTINE_State_READ      ,
+	uint8_t *buffadrr;
+	uint8_t bufferSize;
+	uint8_t readPeriod;
 
-}ModuleSDCard_ROUTINE_State_et;
-
+}ModuleSDCard_MAIN_st;
 
 	
 

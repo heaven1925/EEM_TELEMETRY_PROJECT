@@ -13,6 +13,7 @@
 #include "ModuleSDCard_private.h"
 #include "fatfs_sd.h"
 #include "fatfs.h"
+#include "types.h"
 
 
 
@@ -21,7 +22,7 @@
 
 ModuleSDCard_MAIN_State_et ModuleSDCard_MAIN_State = ModuleSDCard_MAIN_State_IDLE;
 
-ModuleSDCard_ROUTINE_State_et SDCard_ROUTINE_STATE;
+
 
 FATFS *fs;
 FIL file;
@@ -48,16 +49,6 @@ void ModuleSDCard_HWInit(void)
 
     	ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
     }
-
-//	/* Open file to write/ create a file if it doesn't exist */
-//
-//
-//	/* Writing text */
-//	f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
-//
-//	/* Close file */
-//	fresult = f_close(&file);
-
 
 	//@INFO: SDCard thread'ine ait donanımsal init fonksiyonları
 }
@@ -123,8 +114,8 @@ void ModuleSDCard_MAIN_Routine(void)
     	    ModuleSDCard_MAIN_State=ModuleSDCard_MAIN_State_SUSPEND;
       }
 
-
-      f_printf(&file, "%s\n",bufferSDcard,50);
+      sprintf((char*)__GL.sdcard.main.buffadrr , "VOLTAGE:%d \n BATTERY POWER:%d \n TEMPERATURE:%d \n SPEED:%d  \n",50,50,50,50);
+      f_printf(&file, "%s\n",bufferSDcard,__GL.sdcard.main.buffadrr);
      /* Close file */
 
        fresult = f_close(&file);
@@ -136,8 +127,6 @@ void ModuleSDCard_MAIN_Routine(void)
 
        }
 
-	    	/* Writing text string */
-	   f_puts("This data is from the FILE1.txt. And it was written using ...f_puts... ", &file);
 
 
 

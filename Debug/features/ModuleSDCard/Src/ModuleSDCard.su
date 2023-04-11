@@ -1,6 +1,6 @@
-../features/ModuleSDCard/Src/ModuleSDCard.c:41:6:ModuleSDCard_HWInit	16	static
-../features/ModuleSDCard/Src/ModuleSDCard.c:72:6:ModuleSDCard_SWInit	4	static
-../features/ModuleSDCard/Src/ModuleSDCard.c:87:6:ModuleSDCard_StartUP	8	static
-../features/ModuleSDCard/Src/ModuleSDCard.c:113:6:ModuleSDCard_MAIN_Routine	16	static
-../features/ModuleSDCard/Src/ModuleSDCard.c:161:6:ModuleSDCard_MAIN_Process	4	static
-../features/ModuleSDCard/Src/ModuleSDCard.c:174:6:ModuleSDCard_MAIN	8	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:42:6:ModuleSDCard_HWInit	16	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:63:6:ModuleSDCard_SWInit	4	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:78:6:ModuleSDCard_StartUP	8	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:104:6:ModuleSDCard_MAIN_Routine	24	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:150:6:ModuleSDCard_MAIN_Process	4	static
+../features/ModuleSDCard/Src/ModuleSDCard.c:163:6:ModuleSDCard_MAIN	8	static

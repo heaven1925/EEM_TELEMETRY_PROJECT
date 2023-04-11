@@ -15,7 +15,10 @@
 	
 /*********************** INCLUDES **********************************************/
 
-#include "types.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+
 
 
 /*********************** DEFINES ***********************************************/
@@ -41,7 +44,7 @@
 #define  ENGINE_HEAT    "Engine_Heat"
 
 
-typedef union{
+typedef union {
 
 	uint32_t nextionIkons;
 	struct
@@ -62,31 +65,32 @@ typedef union{
 	 bool flasher      :1;
 	 bool rain         :1;
 	 bool engine_heat  :1;
-	}__packed flags;
-}__packed nextionIkon_ut;
+	} flags;
+
+} nextionIkon_ut;
 
 
 typedef enum
 {
-	ModuleNEXTION_FLAG_State_RF_SIGNAL  = 0,
-	ModuleNEXTION_FLAG_State_WI_FI         ,
-	ModuleNEXTION_FLAG_State_LEFT_SIGNAL   ,
-	ModuleNEXTION_FLAG_State_RIGT_SIGNAL   ,
-	ModuleNEXTION_FLAG_State_HEAD_LIGHT    ,
-	ModuleNEXTION_FLAG_State_WIPERS        ,
-	ModuleNEXTION_FLAG_State_WHEEL_ANGLE   ,
-   	ModuleNEXTION_FLAG_State_UP_HILL       ,
-    ModuleNEXTION_FLAG_State_DOWN_HILL     ,
-    ModuleNEXTION_FLAG_State_STRAIGHT      ,
-    ModuleNEXTION_FLAG_State_SPARK         ,
-    ModuleNEXTION_FLAG_State_BATTERY_LEVEL ,
-    ModuleNEXTION_FLAG_State_HAND_BREAK    ,
-    ModuleNEXTION_FLAG_State_FLASHER       ,
-    ModuleNEXTION_FLAG_State_SPEED         ,
-    ModuleNEXTION_FLAG_State_RAIN          ,
-    ModuleNEXTION_FLAG_State_ENGINE_HEAT   ,
+	ModuleNEXTION_PROCESS_State_RF_SIGNAL  = 0,
+	ModuleNEXTION_PROCESS_State_WI_FI         ,
+	ModuleNEXTION_PROCESS_State_LEFT_SIGNAL   ,
+	ModuleNEXTION_PROCESS_State_RIGT_SIGNAL   ,
+	ModuleNEXTION_PROCESS_State_HEAD_LIGHT    ,
+	ModuleNEXTION_PROCESS_State_WIPERS        ,
+	ModuleNEXTION_PROCESS_State_WHEEL_ANGLE   ,
+   	ModuleNEXTION_PROCESS_State_UP_HILL       ,
+    ModuleNEXTION_PROCESS_State_DOWN_HILL     ,
+    ModuleNEXTION_PROCESS_State_STRAIGHT      ,
+    ModuleNEXTION_PROCESS_State_SPARK         ,
+    ModuleNEXTION_PROCESS_State_BATTERY_LEVEL ,
+    ModuleNEXTION_PROCESS_State_HAND_BREAK    ,
+    ModuleNEXTION_PROCESS_State_FLASHER       ,
+    ModuleNEXTION_PROCESS_State_SPEED         ,
+    ModuleNEXTION_PROCESS_State_RAIN          ,
+    ModuleNEXTION_PROCESS_State_ENGINE_HEAT   ,
 
-}ModuleNEXTION_FLAG_State_et;
+}ModuleNEXTION_PROCESS_State_et;
 
 
 

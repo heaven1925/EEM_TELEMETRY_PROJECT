@@ -14,8 +14,8 @@
 	
 	
 /*********************** INCLUDES **********************************************/
+#include <stdint.h>
 
-#include "types.h"
 
 
 /*********************** DEFINES ***********************************************/
@@ -28,6 +28,18 @@ typedef enum
 
 }ModuleRTC_MAIN_State_et;
 
+
+typedef struct
+{
+	uint8_t seconds;
+	uint8_t minutes;
+	uint8_t hour;
+	uint8_t dayofweek;
+	uint8_t dayofmonth;
+	uint8_t month;
+	uint8_t year;
+
+}ModuleRTC_MAIN_st;
 	
 	
 /********************** FUNCTION PROTOTYPE **************************************/	

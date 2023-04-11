@@ -1,6 +1,6 @@
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:30:6:TelemetryMain_HWInit	4	static
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:42:6:TelemetryMain_SWInit	4	static
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:54:6:TelemetryMain_StartUP	8	static
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:80:6:TelemetryMain_MAIN_Routine	4	static
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:92:6:TelemetryMain_MAIN_Process	4	static
-../features/TelemetryMAIN/Src/TelemetryMAIN.c:105:6:TelemetyMain_MAIN	8	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:31:6:TelemetryMain_HWInit	4	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:43:6:TelemetryMain_SWInit	4	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:55:6:TelemetryMain_StartUP	8	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:81:6:TelemetryMain_MAIN_Routine	4	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:93:6:TelemetryMain_MAIN_Process	4	static
+../features/TelemetryMAIN/Src/TelemetryMAIN.c:106:6:TelemetyMain_MAIN	8	static

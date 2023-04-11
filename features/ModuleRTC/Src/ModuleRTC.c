@@ -11,13 +11,14 @@
 /************************** INCLUDES *******************************************/
 
 #include "ModuleRTC_private.h"
+#include "types.h"
+
 #include "DS3231.h"
 
 /************************** DEFINES ********************************************/
 #define	MODULERTC_MAIN_THREAD
 
 ModuleRTC_MAIN_State_et ModuleRTC_MAIN_State = ModuleRTC_MAIN_State_IDLE;
-
 
 ds3231_st ds3231={0};
 
@@ -60,6 +61,8 @@ void ModuleRTC_HWInit(void)
 void ModuleRTC_SWInit(void)
 {
 
+
+
 	ds3231.ops.setTime(&ds3231.obj,&bcdFormat);
 
 	//@INFO: RTC thread'ine ait yazilimsal init fonksiyonları
@@ -100,9 +103,18 @@ void ModuleRTC_StartUP(void)
 
 void ModuleRTC_MAIN_Routine(void)
 {
-
+    uint8_t*rtcPtrGL=(uint8_t*)&__GL.rtc.main;
+    uint8_t*rtcPtr=(uint8_t*)&timeTemp;
 
     timeTemp=ds3231.ops.getTime(&ds3231.obj,&bcdFormat);
+
+
+    for(int i=0;i<sizeof(timeTemp);i++)
+    {
+     *rtcPtrGL=*rtcPtr;
+      rtcPtr++;
+      rtcPtrGL++;
+    }
 
 }
 

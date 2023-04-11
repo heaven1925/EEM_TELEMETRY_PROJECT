@@ -27,6 +27,12 @@
 #include "semphr.h"
 #include "timers.h"
 
+#include "ModuleNEXTION_definition.h"
+#include "ModuleFlash_definition.h"
+#include "ModuleRTC_definition.h"
+#include "ModuleCAN_definition.h"
+#include "TelemetryMAIN_definition.h"
+#include "ModuleSDCard_definition.h"
 
 
 #define BIT_SET(addr, shift) 	(addr | (1 << shift))
@@ -105,13 +111,19 @@ typedef struct{
 	U8 dummy[CAN_PACKEDSIZE];		//@INFO: 256 Byte
 }can_st;
 
-#define		RTC_PACKEDSIZE			0x100
+#define		RTC_PACKEDSIZE			0x100  - \
+/* ModuleRTC_MAIN_st : 7 byte */	      7
 typedef struct{
+
+	ModuleRTC_MAIN_st main;
 	U8 dummy[RTC_PACKEDSIZE];		//@INFO: 256 Byte
 }rtc_st;
 
-#define		SDCARD_PACKEDSIZE		0x200
+#define		SDCARD_PACKEDSIZE		0x200 - \
+/* ModuleSDCard_MAIN_st : 6 byte */	      6
 typedef struct{
+
+	ModuleSDCard_MAIN_st main;
 	U8 dummy[SDCARD_PACKEDSIZE];	//@INFO: 512 Byte
 }sdcard_st;
 
@@ -120,9 +132,14 @@ typedef struct{
 	U8 dummy[WIFI_PACKEDSIZE];		//@INFO: 512 Byte
 }wifi_st;
 
-#define		NEXTION_PACKEDSIZE		0x200
+#define		NEXTION_PACKEDSIZE		0x200 	-\
+/* nextionIkon_ut : 4 byte */ 		4
+
 typedef struct{
-	U8 dummy[NEXTION_PACKEDSIZE];	//@INFO: 512 Byte
+
+	nextionIkon_ut	icons;
+
+	U8 dummy[NEXTION_PACKEDSIZE];	//@INFO: 508 Byte
 }nextion_st;
 
 
