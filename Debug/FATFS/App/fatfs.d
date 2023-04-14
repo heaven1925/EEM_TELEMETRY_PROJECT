@@ -1,7 +1,7 @@
 FATFS/App/fatfs.o: ../FATFS/App/fatfs.c ../FATFS/App/fatfs.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/integer.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/integer.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h \
  ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -47,14 +47,14 @@ FATFS/App/fatfs.o: ../FATFS/App/fatfs.c ../FATFS/App/fatfs.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/diskio.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/user_diskio.h
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/diskio.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/user_diskio.h
 ../FATFS/App/fatfs.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/integer.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/integer.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -101,7 +101,7 @@ C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/diskio.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/user_diskio.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/diskio.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/Middlewares/Third_Party/FatFs/src/ff.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/user_diskio.h:

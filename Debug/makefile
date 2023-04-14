@@ -81,8 +81,8 @@ all: main-build
 main-build: TELEMETRY.elf secondary-outputs
 
 # Tool invocations
-TELEMETRY.elf TELEMETRY.map: $(OBJS) $(USER_OBJS) C:\Users\ASUS\Desktop\STM\Workspace\EEM_TELEMETRY_PROJECT\STM32F401RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TELEMETRY.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\ASUS\Desktop\STM\Workspace\EEM_TELEMETRY_PROJECT\STM32F401RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TELEMETRY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TELEMETRY.elf TELEMETRY.map: $(OBJS) $(USER_OBJS) C:\Users\atakan.ertekin\Desktop\WorkSpace\ElectricDriver_CodeSpace\EEM_TELEMETRY_PROJECT\STM32F401RBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TELEMETRY.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\atakan.ertekin\Desktop\WorkSpace\ElectricDriver_CodeSpace\EEM_TELEMETRY_PROJECT\STM32F401RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TELEMETRY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

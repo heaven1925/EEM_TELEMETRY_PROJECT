@@ -39,9 +39,7 @@
  void ModuleNEXTION_StartUP(void);
  void ModuleNEXTION_MAIN(void)	;
 	
-	
-	
-	
+
 #endif /*__NEXTION_MODULE_PRIVATE_H__ */	
 
 /*********************** END OF FILE ********************************************/

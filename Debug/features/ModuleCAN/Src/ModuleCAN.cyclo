@@ -1,0 +1,6 @@
+ModuleCAN.c:30:6:ModuleCAN_HWInit	1
+ModuleCAN.c:42:6:ModuleCAN_SWInit	1
+ModuleCAN.c:54:6:ModuleCAN_StartUP	1
+ModuleCAN.c:80:6:ModuleCAN_MAIN_Routine	1
+ModuleCAN.c:92:6:ModuleCAN_MAIN_Process	1
+ModuleCAN.c:105:6:ModuleCAN_MAIN	5

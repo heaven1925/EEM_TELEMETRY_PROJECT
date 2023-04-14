@@ -19,6 +19,16 @@
 TelemetryMain_MAIN_State_et TelemetryMain_MAIN_State = TelemetryMain_MAIN_State_IDLE;
 
 
+
+#if 1 /* Protocol Base Functions */
+
+
+
+
+
+#endif
+
+
 #if 1	/* Init Functions */
 
 /*******************************************************************************
@@ -31,6 +41,7 @@ TelemetryMain_MAIN_State_et TelemetryMain_MAIN_State = TelemetryMain_MAIN_State_
 void TelemetryMain_HWInit(void)
 {
 	//@INFO: Telemetry thread'ine ait donanımsal init fonksiyonları
+	/*@LATER: Rf Adaptor Constructor here */
 }
 
 /*******************************************************************************
@@ -43,6 +54,7 @@ void TelemetryMain_HWInit(void)
 void TelemetryMain_SWInit(void)
 {
 	//@INFO: Telemetry thread'ine ait yazilimsal init fonksiyonları
+	//EEM_RFProtocol_CTOR(&__GL.main.protocol);
 }
 
 /*******************************************************************************

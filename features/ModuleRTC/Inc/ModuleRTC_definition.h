@@ -29,15 +29,15 @@ typedef enum
 }ModuleRTC_MAIN_State_et;
 
 
-typedef struct
+typedef struct __attribute__((__packed__))
 {
-	uint8_t seconds;
-	uint8_t minutes;
-	uint8_t hour;
-	uint8_t dayofweek;
-	uint8_t dayofmonth;
-	uint8_t month;
-	uint8_t year;
+	uint8_t seconds;	 	/* 1 */
+	uint8_t minutes;		/* 1 */
+	uint8_t hour;           /* 1 */
+	uint8_t dayofweek;      /* 1 */
+	uint8_t dayofmonth;     /* 1 */
+	uint8_t month;          /* 1 */
+	uint8_t year;           /* 1 */
 
 }ModuleRTC_MAIN_st;
 	

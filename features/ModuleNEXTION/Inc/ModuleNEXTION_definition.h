@@ -44,27 +44,28 @@
 #define  ENGINE_HEAT    "Engine_Heat"
 
 
-typedef union {
+typedef union __attribute__((__packed__)){
 
 	uint32_t nextionIkons;
 	struct
 	{
-	 bool rf           :1;
-	 bool wi_fi        :1;
-	 bool left_signal  :1;
-	 bool right_signal :1;
-	 bool head_light   :1;
-	 bool wipers       :1;
-	 bool wheel_angle_l:1;
-	 bool wheel_angle_r:1;
-	 bool up_hıll      :1;
-	 bool down_hıll    :1;
-	 bool straight     :1;
-	 bool spark        :1;
-	 bool hand_breaker :1;
-	 bool flasher      :1;
-	 bool rain         :1;
-	 bool engine_heat  :1;
+	 bool rf              :1;
+	 bool wifi            :1;
+	 bool left_signal     :1;
+	 bool right_signal    :1;
+	 bool head_light      :1;
+	 bool wipers          :1;
+	 bool wheel_angle_l   :1;
+	 bool wheel_angle_r   :1;
+	 bool up_hıll         :1;
+	 bool down_hıll       :1;
+	 bool straight        :1;
+	 bool spark           :1;
+	 bool hand_breaker    :1;
+	 bool flasher         :1;
+	 bool rain            :1;
+	 bool engine_heat     :1;
+	 uint16_t dummy :16;
 	} flags;
 
 } nextionIkon_ut;

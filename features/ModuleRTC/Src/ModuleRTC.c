@@ -61,8 +61,6 @@ void ModuleRTC_HWInit(void)
 void ModuleRTC_SWInit(void)
 {
 
-
-
 	ds3231.ops.setTime(&ds3231.obj,&bcdFormat);
 
 	//@INFO: RTC thread'ine ait yazilimsal init fonksiyonları
@@ -103,6 +101,9 @@ void ModuleRTC_StartUP(void)
 
 void ModuleRTC_MAIN_Routine(void)
 {
+
+	//@BACK @BACK @BACK
+
     uint8_t*rtcPtrGL=(uint8_t*)&__GL.rtc.main;
     uint8_t*rtcPtr=(uint8_t*)&timeTemp;
 

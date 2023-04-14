@@ -1,0 +1,7 @@
+DS3231.c:47:6:CTOR_DS3231	1
+DS3231.c:68:6:setTime	2
+DS3231.c:83:9:getTime	2
+DS3231.c:98:6:printTime	1
+DS3231.c:106:6:printDate	1
+DS3231.c:116:16:decToBcd	1
+DS3231.c:132:16:bcdToDec	1

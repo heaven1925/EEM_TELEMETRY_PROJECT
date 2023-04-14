@@ -1,0 +1,6 @@
+ModuleNEXTION.c:40:6:ModuleNEXTION_HWInit	1
+ModuleNEXTION.c:55:6:ModuleNEXTION_SWInit	1
+ModuleNEXTION.c:67:6:ModuleNEXTION_StartUP	1
+ModuleNEXTION.c:93:6:ModuleNEXTION_MAIN_Routine	1
+ModuleNEXTION.c:108:6:ModuleNEXTION_MAIN_Process	16
+ModuleNEXTION.c:225:6:ModuleNEXTION_MAIN	5

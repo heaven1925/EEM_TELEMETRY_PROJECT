@@ -4,7 +4,7 @@ Middlewares/Third_Party/FatFs/src/ff_gen_drv.o: \
  ../Middlewares/Third_Party/FatFs/src/diskio.h \
  ../Middlewares/Third_Party/FatFs/src/integer.h \
  ../Middlewares/Third_Party/FatFs/src/ff.h \
- C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h \
+ C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h \
  ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -54,7 +54,7 @@ Middlewares/Third_Party/FatFs/src/ff_gen_drv.o: \
 ../Middlewares/Third_Party/FatFs/src/diskio.h:
 ../Middlewares/Third_Party/FatFs/src/integer.h:
 ../Middlewares/Third_Party/FatFs/src/ff.h:
-C:/Users/ASUS/Desktop/STM/Workspace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h:
+C:/Users/atakan.ertekin/Desktop/WorkSpace/ElectricDriver_CodeSpace/EEM_TELEMETRY_PROJECT/FATFS/Target/ffconf.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:

@@ -96,8 +96,12 @@ typedef union{
 
 // [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
 
-#define		MAIN_PACKEDSIZE			0x200
+#define		MAIN_PACKEDSIZE			0x200	- \
+/* EEM_RFProtocol_st:  40 Byte */	   40	- \
+/* broadcastMode_Type: 1 Byte */		1
 typedef struct{
+	EEM_RFProtocol_st 	protocol;
+	broadcastMode_Type	mode ;
 	U8 dummy[MAIN_PACKEDSIZE];		//@INFO: 512 Byte
 }main_st;
 

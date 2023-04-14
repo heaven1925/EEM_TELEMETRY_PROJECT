@@ -10,8 +10,6 @@ const nextion_ops nexOps =
 };
 
 
-
-
 #if defined(DEBUG_MODE)
 
 const ds3231_dbg_ops dbg_ops =

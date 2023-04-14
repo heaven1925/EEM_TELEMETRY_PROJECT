@@ -28,7 +28,7 @@ typedef enum
 
 }ModuleSDCard_MAIN_State_et;
 
-typedef struct __packed
+typedef struct __attribute__((__packed__))
 {
 	uint8_t *buffadrr;
 	uint8_t bufferSize;

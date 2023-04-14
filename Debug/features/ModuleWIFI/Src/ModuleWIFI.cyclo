@@ -1,0 +1,6 @@
+ModuleWIFI.c:31:6:ModuleWIFI_HWInit	1
+ModuleWIFI.c:43:6:ModuleWIFI_SWInit	1
+ModuleWIFI.c:55:6:ModuleWIFI_StartUP	1
+ModuleWIFI.c:81:6:ModuleWIFI_MAIN_Routine	1
+ModuleWIFI.c:93:6:ModuleWIFI_MAIN_Process	1
+ModuleWIFI.c:106:6:ModuleWIFI_MAIN	5

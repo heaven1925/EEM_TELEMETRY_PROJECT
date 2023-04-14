@@ -115,12 +115,11 @@ void ModuleNEXTION_MAIN_Process(void)
 
                 nextion.ops.sendCmd(&nextion.obj,RF_SIGNAL,__GL.nextion.icons.flags.rf);
 
-
 		    break;
 
 		    case ModuleNEXTION_PROCESS_State_WI_FI:
 
-		    	nextion.ops.sendCmd(&nextion.obj,WI_FI,__GL.nextion.icons.flags.wi_fi);
+		    	nextion.ops.sendCmd(&nextion.obj,WI_FI,__GL.nextion.icons.flags.wifi);
 
 		    break;
 

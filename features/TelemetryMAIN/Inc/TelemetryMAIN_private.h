@@ -41,7 +41,19 @@
 //@INFO: Public function, private decleration
 void TelemetryMain_StartUP(void);
 void TelemetyMain_MAIN(void);	//@INFO: Main Thread Function
-	
+
+
+//@INFO: RF protocol Functions
+tlm_err_t EEM_RFProtocol_CTOR(EEM_RFProtocol_st* self);
+tlm_err_t EEM_RFProtocol_TX(EEM_RFProtocol_st* self , broadcastMode_Type mode/* @LATER: , typedef_rfAdaptor_device_st* dev */ );
+tlm_err_t EEM_RFProtocol_RX(EEM_RFProtocol_st* self /* @LATER: , typedef_rfAdaptor_device_st* dev */ , );
+
+tlm_err_t EEM_RFProtocol_CheckCRC(EEM_RFProtocol_st* self);
+tlm_err_t EEM_RFProtocol_CheckTime(EEM_RFProtocol_st* self, ModuleRTC_MAIN_st* param);
+
+EEM_RFProtocol_st EEM_RFProtocol_PrepareTxData(EEM_RFProtocol_st* self , ModuleRTC_MAIN_st* param /* @LATER */ );
+EEM_RFProtocol_st EEM_RFProtocol_GetRxData(/* @LATER: , typedef_rfAdaptor_device_st* dev */ void/*@DEL*/);
+
 #endif /*__TELEMETRY_MODULE_PRIVATE_H__ */	
 
 /*********************** END OF FILE ********************************************/
